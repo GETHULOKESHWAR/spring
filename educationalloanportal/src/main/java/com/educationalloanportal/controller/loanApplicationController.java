@@ -49,22 +49,5 @@ public class loanApplicationController {
 		laSer.deleteloan(loanId);
 		return "Deleted";
 	}
-	
-	
-	
-	
-	
-	
-//	@GetMapping("user/getProfile")
-//		public List<userModel> getProfile()
-//		{
-//			
-//		return laSer.getProfile();
-//		}
-//		
-//		@PostMapping("user/login")
-//		public loginModel savelog(@RequestBody loginModel l)
-//		{
-//			return laSer.saveLog(l);
-//		}
+
 }

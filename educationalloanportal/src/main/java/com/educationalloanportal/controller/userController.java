@@ -20,22 +20,12 @@ import com.educationalloanportal.service.userService;
 public class userController {
 	@Autowired
 	userService usSer;
-//	@Autowired
-//	loanApplicationSer laSer;
-
 		@GetMapping("/user/getProfile")
 		public List<userModel> getProfile()
 		{
 			
 		return usSer.getProfile();
 		}
-		
-//		@GetMapping("admin/getAllloans")
-//		public List<adminModel> getAllLoans()
-//		{
-//			
-//		return laSer.getAllloans();
-//		}
 		
 		@PostMapping("/user/insert")
 		public userModel savelog(@RequestBody userModel l)
@@ -56,9 +46,5 @@ public class userController {
 			usSer.deletedata(id);
 			return "Deleted";
 		}
-		
-		
-		
-		
 	}
 
